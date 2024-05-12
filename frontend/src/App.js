@@ -1,10 +1,20 @@
+import { Container } from 'react-bootstrap'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import React from 'react'
+import HomeScreen from './screens/HomeScreen'
 
 const App = () => {
   return (
-    <div>
-      <h1>Welcome To GoShop</h1>
-    </div>
+    <>
+      <Header/>
+      <main className='py-3'>
+        <Container>
+          <HomeScreen/>
+        </Container>
+      </main>
+      <Footer/>
+    </>
   )
 }
 
